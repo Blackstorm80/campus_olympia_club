@@ -1,60 +1,183 @@
 <html>
+<head>
+    <title>Link-About-Us</title>
+    <link rel="stylesheet" href="style_landing_p.css">
+    <style>
+        /* General body styling */
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
 
-<head> <title> link-about-us</title> </head>
-<link rel = "stylesheet" href ="style_landing_p.css">
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #333;
+            color: #FF6F00;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            padding: 14px 20px;
+            text-align: center;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #FF6F00;
+            color: #333;
+        }
+
+        /* About Section */
+        .nfl-container {
+            padding: 64px;
+            background-color: #f9f9f9;
+        }
+
+        .nfl-red {
+            color: #FF6F00;
+        }
+
+        .nfl-center {
+            text-align: center;
+        }
+
+        .nfl-jumbo {
+            font-size: 40px;
+        }
+
+        .nfl-padding-64 {
+            padding: 64px;
+        }
+
+        /* About Text */
+        .nfl-right {
+            float: right;
+            margin-left: 20px;
+        }
+
+        .nfl-circle {
+            border-radius: 50%;
+        }
+
+        .nfl-stretch img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Opening Hours Section */
+        .nfl-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nfl-half {
+            width: 48%;
+        }
+
+        h1, h2 {
+            color: #ff6f00;
+            font-size: 32px;
+        }
+
+        /* Styling for links and buttons */
+        a {
+            color: #FF6F00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e65100;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Dropdown Menu -->
 <div class="dropdown">
-    <button class="dropbtn">menu</button>
+    <button class="dropbtn">Menu</button>
     <div class="dropdown-content">
-        <a href="Link-Home.html" target="frame-3" style="font-size: 25; color: rgb(22, 22, 21);">Home</a>
-        
-        <a href="Link_About_us.html" target="frame-3" style="font-size: 25; color: ivory;">About us</a>
-        
-        <a href="Link-Infrastructure.html" target="frame-3" style="font-size: 25; color: rgb(32, 32, 30);">Infrastructure</a>
-        
-    
-        <a href="#to r_form" target="frame-3" style="font-size: 25; color: rgb(24, 24, 22);">s'inscrire</a>
-    
-        <a href="Link-Events & News.html" target="frame-3" style="font-size: 25; color:rgb(24, 24, 23)">Events & News</a>
-    
-        <a href="Link-Gallery.html" target="frame-3" style="font-size: 25; color: rgb(36, 36, 34);">Gallery</a>
-        
-        
-        <a href="Link-Reach us.html" target="frame-3" style="font-size: 25; color: rgb(7, 7, 6);">Reach us</a>
-        
+        <a href="index_landingpage.html" target="frame-3">Home</a>
+        <a href="Link_About_us.html" target="frame-3">About Us</a>
+        <a href="Link-Infrastructure.html" target="frame-3">Infrastructure</a>
+        <a href="link_r_form.html" target="frame-3">S'inscrire</a>
+        <a href="Link-Events & News.html" target="frame-3">Events & News</a>
+        <a href="Link-Gallery.html" target="frame-3">Gallery</a>
+        <a href="Link-Reach us.html" target="frame-3">Reach Us</a>
     </div>
-  </div>
-  
-  
-  <!-- About -->
+</div>
+
+<!-- About Section -->
 <div id="about" class="nfl-container nfl-red nfl-grayscale nfl-xlarge nfl-padding-64">
+    <h1 class="nfl-center nfl-jumbo">About</h1>
+    <p>Who are we?</p>
+    <p>Our university club is a dynamic and inclusive space where students come together to push their limits in powerlifting and US football. Whether you're a seasoned athlete or just starting out, we offer a supportive environment for all skill levels. With access to top-notch facilities, expert coaches, and a strong community, our club is dedicated to helping you grow both athletically and personally. We believe in fostering teamwork, discipline, and a healthy lifestyle while balancing academics and training. Join us to not only improve your strength and skills but to be part of a close-knit, motivated team that cares about your success.</p>
 
-<h1 class="nfl-center nfl-jumbo">About</h1>
+    <img src="https://cruciverbiste.com/wp-content/uploads/2012/11/force.png" style="width:150px" class="nfl-circle nfl-right" alt="legend having the record">
 
-<p> who are we ? </p>
+    <h2>How to Stay Healthy: Some Advice</h2>
+    <p>Staying strong and healthy requires a balanced approach that combines physical activity, nutrition, and mental wellness. Here are some key tips to help you stay on track:</p>
+    <ul>
+        <li><strong>Consistency is Key:</strong> Stick to a regular workout routine that includes strength training, cardiovascular exercises, and mobility work. Aim for consistency, not perfection.</li>
+        <li><strong>Fuel Your Body:</strong> Eat a well-rounded diet rich in lean proteins, healthy fats, and complex carbohydrates. Hydration is also crucial—drink plenty of water throughout the day.</li>
+        <li><strong>Rest and Recovery:</strong> Sleep is essential for muscle recovery and overall health. Aim for 7-9 hours per night and incorporate rest days into your training.</li>
+        <li><strong>Set Realistic Goals:</strong> Set achievable goals and celebrate progress, no matter how small. This keeps you motivated and focused on improvement.</li>
+        <li><strong>Listen to Your Body:</strong> Pay attention to signs of fatigue or pain. Rest when needed and avoid overtraining to prevent injury.</li>
+        <li><strong>Mental Wellness:</strong> Stay positive and manage stress through mindfulness practices, social connections, and engaging in activities that bring you joy.</li>
+        <li><strong>Stay Active Daily:</strong> In addition to your workouts, stay active throughout the day with walks, stretching, or other physical activities to keep your body moving.</li>
+    </ul>
 
+    <p>At our club, we’re more than just a place for powerlifting and US football – we’re a community focused on your overall wellbeing. We understand that true strength comes from both the body and the mind, which is why we prioritize your physical health, mental resilience, and personal growth. Whether you’re lifting weights or mastering the game, we provide tailored training and unwavering support to help you reach your goals. Our dedicated team is here to guide you, offering encouragement and a positive environment where you can thrive. Your success and wellbeing are at the heart of everything we do.</p>
 
-<img src="https://cruciverbiste.com/wp-content/uploads/2012/11/force.png" style="width:150px" class="nfl-circle nfl-right" alt="legend having the record "></p>
-<p><strong>how to stay healty </strong> some advises
+    <p class="nfl-padding-16 nfl-stretch">
+        <img src="https://i.ytimg.com/vi/IcaQY7W4Hck/maxresdefault.jpg" style="width:100%" alt="record CAMPUS__OLYMPIA">
+    </p>
 
-
-<p>some worl records in football and powerlifting </p>
-<p class="nfl-padding-16 nfl-stretch">
-<img src="https://i.ytimg.com/vi/IcaQY7W4Hck/maxresdefault.jpg" style="width:100%" alt="record CAMPUS__OLYMPIA">
-</p>
-<h1><b>Opening Hours</b></h1>
-
-<div class="nfl-row">
-<div class="nfl-half">
-<p>consulting </p>
-<p>coaching </p>
-<p>competition </p>
+    <h1><b>Opening Hours</b></h1>
+    <div class="nfl-row">
+        <div class="nfl-half">
+            <p>Consulting</p>
+            <p>Coaching</p>
+            <p>Competition</p>
+        </div>
+        <div class="nfl-half">
+            <p>athletics</p>
+            <p>record</p>
+            <p>Dietetics </p>
+        </div>
+    </div>
 </div>
-<div class="nfl-half">
-<p>purpose</p>
-<p>history</p>
-<p>huuuuuuu</p>
-</div>
-</div>
 
-</div> 
+</body>
 </html>
+
