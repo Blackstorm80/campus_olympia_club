@@ -1,180 +1,111 @@
-@import url('https://fonts.googleapis.com/css?family=K2D:500&subset=latin-ext');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame-3</title>
+    <link rel="stylesheet" href="style_landing_p.css">
+</head>
+<body>
+    <!-- Flip Cards Section -->
+    <div class="flip-cards-container">
+        <!-- Ronnie Coleman -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="ronieco.jpg" alt="Ronnie Coleman" class="card-image">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Ronnie Coleman</h1>
+                    <p>1998 to 2005 Mr. Olympia</p>
+                    <p>We are Olympians</p>
+                </div>
+            </div>
+        </div>  
 
-*/dropbox toolbar .dropbtn {
-  background-color: #f3f5f3;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
+        <!-- Chris Bumsted -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="cbum.jpg" alt="Chris Bumsted" class="card-image">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Chris Bumsted</h1>
+                    <p>2019 to 2024 Mr. Olympia</p>
+                    <p>We are Olympians</p>
+                </div>
+            </div>
+        </div>  
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+        <!-- Kai Greene -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="predator.jpg" alt="Kai Greene" class="card-image">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Kai Greene</h1>
+                    <p>THE PREDATOR!</p>
+                    <p>We are Olympians</p>
+                </div>
+            </div>
+        </div>  
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+        <!-- Stephane Matala -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="stephma.jpg" alt="Stephane Matala" class="card-image">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Stephane Matala</h1>
+                    <p>MR Big Evolution 2024</p>
+                    <p>We are Olympians</p>
+                </div>
+            </div>
+        </div>  
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+        <!-- Arnold Schwarzenegger -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="arnold.jpg" alt="Arnold Schwarzenegger" class="card-image">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Arnold Schwarzenegger</h1>
+                    <p>1984 to 1991 Mr. Olympia</p>
+                    <p>We are Olympians</p>
+                </div>
+            </div>
+        </div>  
+    </div>
 
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-/* General Reset and Global Styles */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;  /* Light grey background */
-    color: #333;  /* Dark grey text */
-    line-height: 1.6;
-    padding: 20px;
-}
-
-/* Flip Cards Section */
-.flip-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-    margin-bottom: 50px;
-}
-
-.flip-card {
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    transition: transform 0.3s ease;
-}
-
-.flip-card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.flip-card-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.flip-card-back {
-    background-color: #FF6F00;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    transform: rotateY(180deg);
-}
-
-.flip-card-back h1 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.flip-card-back p {
-    font-size: 1rem;
-}
-
-/* About Section */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.section-title {
-    font-size: 2rem;
-    color: #FF6F00;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.hours {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.hours-column {
-    width: 45%;
-}
-
-.hours-column p {
-    font-size: 1rem;
-}
-
-/* Image */
-.full-width-img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .flip-cards-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flip-card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .hours {
-        flex-direction: column;
-    }
-
-    .hours-column {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
+    <!-- About Section -->
+    <div id="about" class="container">
+        <h1 class="section-title">About</h1>
+        <h3>Workout Planning</h3>
+        <p class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/y9LSTeAZG1s?si=rjCpH0ttGIP5RuBL" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </p>
+        
+        <h1 class="section-title">Opening Hours</h1>
+        <div class="hours">
+            <div class="hours-column">
+                <p>Mon &amp; Tue: CLOSED</p>
+                <p>Wednesday: 10:00 - 24:00</p>
+                <p>Thursday: 10:00 - 24:00</p>
+            </div>
+            <div class="hours-column">
+                <p>Friday: 10:00 - 12:00</p>
+                <p>Saturday: 10:00 - 23:00</p>
+                <p>Sunday: CLOSED</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Legends</h1>
+        <img src="kevinelev.jpg" alt="Legends" class="full-width-img">
+    </div>
+</body>
+</html>
